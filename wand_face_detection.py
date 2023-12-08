@@ -9,8 +9,8 @@ Original file is located at
 ## **Do NOT touch this cell**
 """
 
-# !wget http://crowley-coutaz.fr/HeadPoseDataSet/HeadPoseImageDatabase.tar.gz
-# !tar -xvzf HeadPoseImageDatabase.tar.gz
+!wget http://crowley-coutaz.fr/HeadPoseDataSet/HeadPoseImageDatabase.tar.gz
+!tar -xvzf HeadPoseImageDatabase.tar.gz
 
 import os
 import glob
