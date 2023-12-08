@@ -330,7 +330,7 @@ for epoch in range(epochs):
 
 """##**Do NOT touch this cell**"""
 
-fig = plt.figure(6, 300)
+fig = plt.figure(figsize=(6, 300))
 
 visualize_idx = np.random.randint(len(testloader), size=100)
 cnt = 0
@@ -350,7 +350,7 @@ with torch.no_grad():
             print('[%3d/%3d] | final_MSE: %f'%(batch_idx+1, len(testloader), test_loss/(batch_idx+1)))
             print('\033[31m' + '[GT □]' + '\033[30m' +' | ' + '\033[34m' +'[Pred □]' +  '\033[0m')
         if batch_idx in visualize_idx: # visualize for selected images
-            subplot = fig.add_subplot(2,50, cnt+1)
+            subplot = fig.add_subplot(50,2, cnt+1)
 
             sample_image = images[0]
             sample_outputs = outputs[0]
